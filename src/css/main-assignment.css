@@ -1,0 +1,70 @@
+html {
+    font-family: sans-serif;
+}
+
+button,
+.cl-adtion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+button>*,
+.cl-adtion {
+    pointer-events: none;
+}
+
+input[type="number"],
+.cl-number {
+    font-family: monospace;
+    font-size: 1.25em;
+    text-align: right;
+}
+
+.cmp-input-container,
+.cmp-input-container>label {
+    display: grid;
+    justify-content: center;
+}
+
+.cl-dummy {
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.cmp-section-container {
+    width: 400px;
+    margin: auto;
+}
+.cmp-input-container {
+    grid-template-columns: 1fr 5ch;
+}
+
+.cmp-input-container>label {
+    grid-template-columns: 15ch 1fr;
+    white-space: nowrap;
+}
+
+.cmp-input-container>label>b{
+    text-align: right;
+    align-self: center;
+
+}
+.cmp-input-container>label>b::after {
+    font-weight: bold;
+    color: blue;
+    content: '::';
+    margin-left: 0.5ch;
+    margin-right: 0.5ch;
+}
+.cmp-result {
+    padding-right: 2ch;
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-style: double;
+}
+.cmp-input-no {
+    display: inline-block;
+    width: 2ch;
+}
